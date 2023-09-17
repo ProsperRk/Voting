@@ -1,0 +1,42 @@
+.container {
+    width: 1240px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* height: 100%; */
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+}
+
+.btn {
+    background-color: var(--primary-color-green);
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+}
+
+.hidden {
+    display: none;
+}
