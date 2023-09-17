@@ -1,0 +1,25 @@
+.action {
+    padding-top: 20px;
+    flex-direction: row;
+}
+
+.action .button {
+    width: 90px;
+} 
+
+.action .edit {
+    gap: 12px;
+}
+
+.avatar {
+    width: 20px;
+}
+
+.avatar img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.bio {
+    width: 500px;
+}

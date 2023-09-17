@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Votes | Uvote Dashboard</title>
+
+    <link rel="stylesheet" href="../assets/fontsawesome/all.min.css">
+    <link rel="stylesheet" href="../assets/fontsawesome/fontawesome.min.css">
+    <link rel="stylesheet" href="../node_modules/sweetalert2/dist/sweetalert2.min.css">
+    <link rel="stylesheet" href="../css/utils.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="./styles/voters.css">
+</head>
+<body>
+    
+    <div class="container">
+        
+        <!-- Aside Navbar -->
+        <aside class="active">
+            <div class="menu-btn">
+                <span>
+                    <i class="fa-solid fa-chevron-left"></i>
+                </span>
+            </div>
+            <div class="aside-header">
+                <a href="../index.html" class="logo">UV</a>
+                <span class="details">ote</span>
+            </div>
+            <nav>
+                <div class="menu">
+                    <div class="title">Primary</div>
+
+                    <ul>
+                        <li class="">
+                            <a href="../index.html">
+                                <span class="icon">
+                                    <i class="fa-solid fa-gauge"></i>
+                                </span>
+                                <span class="text">Dashboard</span>
+                            </a>
+                        </li>
+                        <li >
+                            <a href="../pages/votes.html">
+                                <span class="icon">
+                                    <i class="fa-solid fa-check-to-slot"></i>
+                                </span>
+                                <span class="text">Votes</span>
+                            </a>
+                        </li>
+                        <li class="" class="active">
+                            <a href="#">
+                                <span class="icon">
+                                    <i class="fa-solid fa-chart-gantt"></i>
+                                </span>
+                                <span class="text">Manage</span>
+                                <span class="arrow">
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </span>
+                            </a>
+                            <ul class="sub-menu">
+                                <li class="active">
+                                    <a href="../pages/voters.html">
+                                        <span class="text">Voters</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../pages/positions.html">
+                                        <span class="text">Positions</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../pages/candidates.html">
+                                        <span class="text">Candidates</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="">
+                            <a href="#">
+                                <span class="icon">
+                                    <i class="fa-solid fa-square-poll-vertical"></i>
+                                </span>
+                                <span class="text">Settings</span>
+                                <span class="arrow">
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </span>
+                            </a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="../pages/ballot.html">
+                                        <span class="text">Ballot Positions</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="text">Election Tile</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="menu">
+                <div class="title">Account</div>
+                <ul>
+                    <li class="">
+                        <a href="#">
+                            <span class="icon">
+                                <i class="fa-solid fa-circle-question"></i>
+                            </span>
+                            <span class="text">Help</span>
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="#">
+                            <span class="icon">
+                                <i class="fa-solid fa-right-from-bracket"></i>
+                            </span>
+                            <span class="text">Logout</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+        <!-- End of Aside Navbar -->
+
+        <!-- Main Navbar -->
+        <main>
+            <div class="header-wrapper">
+                <div class="header-title">
+                    <span>Primary / Manage / Voters</span>
+                    <h2>Voters</h2>
+                </div>
+                <div class="user-info">
+                    <div class="search-box">
+                        <span>
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </span>
+                        <input type="search" name="search" id="search" placeholder="Search">
+                    </div>
+                    <div class="user">
+                        <img src="../assets/img/candidate.jpg" alt="">
+                        <div class="user-details">
+                            <a href="#">N Prosper</a>
+                            <span>Admin</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="table-wrapper">
+                <div class="buttons-wrapper">
+                    <button id="add" class="button">
+                        <span><i class="fa-solid fa-add"></i></span>
+                        Add New
+                    </button>
+                </div>
+                <div class="show-entries">
+                    <label for="entries">Show</label>
+                    <select name="entries" id="entries">
+                        <option value="1">10</option>
+                        <option value="1">15</option>
+                        <option value="1">20</option>
+                        <option value="1">25</option>
+                    </select>
+                    <label for="entries">entries</label>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Email</th>
+                            <th>Phone Number</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody">
+                        <tr>
+                            <td>Julian</td>
+                            <td>Winston</td>
+                            <td>julianwin@example.com</td>
+                            <td>+250791154300</td>
+                            <td class="action">
+                                <button class="button edit" id="edit">
+                                    <i class="fas fa-edit"></i>
+                                    Edit
+                                </button>
+                                <button class="button delete" id="delete">
+                                    <i class="fa-solid fa-trash"></i>
+                                    Delete
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Kayitsinga</td>
+                            <td>Hertillan</td>
+                            <td>hertillankayitsinga@gmail.com</td>
+                            <td>+25079194934</td>
+                            <td class="action">
+                                <button class="button edit" id="edit">
+                                    <i class="fas fa-edit"></i>
+                                    Edit
+                                </button>
+                                <button class="button delete" id="delete">
+                                    <i class="fa-solid fa-trash"></i>
+                                    Delete
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="modal-container">
+                <div class="modal">
+
+                </div>
+            </div>
+        </main>
+        <!-- End Main Navbar -->
+    </div>
+
+
+
+
+
+    <script src="../js/jQuery.js"></script>
+    <script src="../node_modules/sweetalert2/dist/sweetalert2.all.min.js"></script>
+    <script src="./js/vote.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../assets/fontsawesome/all.min.js"></script>
+</body>
+</html>

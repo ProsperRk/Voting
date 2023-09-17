@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UVote Dashoard</title>
+
+    <link rel="stylesheet" href="./assets/fontsawesome/all.min.css">
+    <link rel="stylesheet" href="./assets/fontsawesome/fontawesome.min.css">
+    <link rel="stylesheet" href="./css/utils.css">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    
+    <div class="container">
+        <!-- Aside Section -->
+        <aside class="active">
+            <div class="menu-btn">
+                <span>
+                    <i class="fa-solid fa-chevron-left"></i>
+                </span>
+            </div>
+            <div class="aside-header">
+                <a href="./index.html" class="logo">UV</a>
+                <span class="details">ote</span>
+            </div>
+            <nav>
+                <div class="menu">
+                    <div class="title">Primary</div>
+
+                    <ul>
+                        <li class="active">
+                            <a href="#">
+                                <span class="icon">
+                                    <i class="fa-solid fa-gauge"></i>
+                                </span>
+                                <span class="text">Dashboard</span>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="./pages/votes.html">
+                                <span class="icon">
+                                    <i class="fa-solid fa-check-to-slot"></i>
+                                </span>
+                                <span class="text">Votes</span>
+                            </a>
+                        </li>
+                        <li class="">
+                            <a href="#">
+                                <span class="icon">
+                                    <i class="fa-solid fa-chart-gantt"></i>
+                                </span>
+                                <span class="text">Manage</span>
+                                <span class="arrow">
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </span>
+                            </a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="../admin/pages/voters.html">
+                                        <span class="text">Voters</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../admin/pages/positions.html">
+                                        <span class="text">Positions</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../admin/pages/candidates.html">
+                                        <span class="text">Candidates</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="">
+                            <a href="#">
+                                <span class="icon">
+                                    <i class="fa-solid fa-square-poll-vertical"></i>
+                                </span>
+                                <span class="text">Settings</span>
+                                <span class="arrow">
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </span>
+                            </a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="../admin/pages/ballot.html">
+                                        <span class="text">Ballot Positions</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="../admin/pages/positions.html">
+                                        <span class="text">Election Tile</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="menu">
+                <div class="title">Account</div>
+                <ul>
+                    <li class="">
+                        <a href="#">
+                            <span class="icon">
+                                <i class="fa-solid fa-circle-question"></i>
+                            </span>
+                            <span class="text">Help</span>
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="#">
+                            <span class="icon">
+                                <i class="fa-solid fa-right-from-bracket"></i>
+                            </span>
+                            <span class="text">Logout</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+
+        <!-- main Section -->
+        <main>
+
+            <div class="header-wrapper">
+                <div class="header-title">
+                    <span>Primary / Dashboard</span>
+                    <h2>Dashboard</h2>
+                </div>
+                <div class="user-info">
+                    <div class="search-box">
+                        <span>
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </span>
+                        <input type="search" name="search" id="search" placeholder="Search">
+                    </div>
+                    <div class="user">
+                        <img src="./assets/img/candidate.jpg" alt="">
+                        <div class="user-details">
+                            <a href="#">N Prosper</a>
+                            <span>Admin</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-cards-wrapper">
+                <div class="card">
+                    <div class="card-top">
+                        <div class="card-details">
+                            <span id="positions" class="card-num">4</span>
+                            <span class="title">No of Positions</span>
+                        </div>
+                        <span class="card-icon">
+                            <i class="fa-solid fa-rectangle-list"></i>
+                        </span>
+                    </div>
+                    <a href="../admin/pages/positions.html" class="more-info">
+                        <span class="more-info-text">
+                            More info
+                        </span>
+                        <span class="icon">
+                            <i class="fa-solid fa-circle-arrow-right"></i>
+                        </span>
+                    </a>
+                </div>
+
+                <div class="card">
+                    <div class="card-top">
+                        <div class="card-details">
+                            <span id="positions" class="card-num">12</span>
+                            <span class="title">No of Candidates</span>
+                        </div>
+                        <span class="card-icon">
+                            <i class="fa-solid fa-user-tie"></i>
+                        </span>
+                    </div>
+                    <a href="../admin/pages/candidates.html" class="more-info">
+                        <span class="more-info-text">
+                            More info
+                        </span>
+                        <span class="icon">
+                            <i class="fa-solid fa-circle-arrow-right"></i>
+                        </span>
+                    </a>
+                </div>
+
+                <div class="card">
+                    <div class="card-top">
+                        <div class="card-details">
+                            <span id="positions" class="card-num">200</span>
+                            <span class="title">Total Voters</span>
+                        </div>
+                        <span class="card-icon">
+                            <i class="fa-solid fa-users"></i>
+                        </span>
+                    </div>
+                    <a href="../admin/pages/voters.html" class="more-info">
+                        <span class="more-info-text">
+                            More info
+                        </span>
+                        <span class="icon">
+                            <i class="fa-solid fa-circle-arrow-right"></i>
+                        </span>
+                    </a>
+                </div>
+
+                <div class="card">
+                    <div class="card-top">
+                        <div class="card-details">
+                            <span id="positions" class="card-num">102</span>
+                            <span class="title">Total Voted</span>
+                        </div>
+                        <span class="card-icon">
+                            <i class="fa-solid fa-check-to-slot"></i>
+                        </span>
+                    </div>
+                    <a href="./pages/votes.html" class="more-info">
+                        <span class="more-info-text">
+                            More info
+                        </span>
+                        <span class="icon">
+                            <i class="fa-solid fa-circle-arrow-right"></i>
+                        </span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="vote-tally-wrapper">
+                <div class="tally-header">
+                    <h2>Vote Tally</h2>
+                    <button type="button" id="download" class="button">
+                        <span><i class="fa-solid fa-download"></i></span>
+                        Print/ Download
+                    </button>
+                </div>
+                <div class="vote-tally">
+                    <div class="position-one">
+                        <canvas id="myChart" class="myChart" width="600" height="300"></canvas>
+                    </div>
+                    <div class="position-one">
+                        <canvas id="mySecChart" class="myChart" width="600" height="300"></canvas>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+
+    <script src="./node_modules/chart.js/dist/chart.umd.js"></script>
+    <script src="./node_modules/jspdf/dist/jspdf.umd.min.js"></script>
+    <script src="./node_modules/html2canvas/dist/html2canvas.min.js"></script>
+    <script src="./js/jQuery.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./assets/fontsawesome/all.min.js"></script>
+</body>
+</html>

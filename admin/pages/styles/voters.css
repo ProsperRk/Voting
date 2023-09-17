@@ -1,0 +1,29 @@
+main .table-wrapper button {
+    background: var(--color-success);
+}
+
+main .table-wrapper button:hover {
+    background: #2daa93;
+}
+
+main .table-wrapper .action {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+main .table-wrapper .action .edit {
+    background: #c5a135;
+}
+
+main .table-wrapper .action .edit:hover {
+    background: #d8b54b;
+}
+
+main .table-wrapper .action .delete {
+    background: #e01642;
+}
+
+main .table-wrapper .action .delete:hover {
+    background: var(--color-danger);
+}
