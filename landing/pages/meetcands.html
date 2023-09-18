@@ -4,21 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>eVoting | Your Vote, Your Right</title>
-    <link rel="stylesheet" href="./styles/utils.css">
-    <link rel="stylesheet" href="./styles/styles.css">
-    <link rel="stylesheet" href="./assets/fontawesome/all.min.css">
-    <link rel="stylesheet" href="./assets/fontawesome/fontawesome.min.css">
+    <link rel="stylesheet" href="../styles/utils.css">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/cands.css">
+    <link rel="stylesheet" href="../assets/fontawesome/all.min.css">
+    <link rel="stylesheet" href="../assets/fontawesome/fontawesome.min.css">
 </head>
 <body>
     
     <header class="">
         <div class="container">
             <div class="navigation flex">
-                <a href="#" class="logo">Uvote</a>
+                <a href="../index.html" class="logo">Uvote</a>
                 <div class="row flex">
                     <nav>
-                        <a href="./index.html" class="nav-link selected">Home</a>
-                        <a href="./pages/meetcands.html" class="nav-link">Meet Candidates</a>
+                        <a href="../index.html" class="nav-link">Home</a>
+                        <a href="./pages/meetcands.html" class="nav-link selected">Meet Candidates</a>
                     </nav>
                     <div class="btns">
                         <button type="button" id="login" class="btn btn-outline">Login</button>
@@ -29,90 +30,25 @@
         </div>
     </header>
 
-    <section id="hero">
+    <section id="candidates">
         <div class="container">
-            <div class="hero-content flex">
-                <div class="hero-text">
-                    <h1>Your Vote, <span>Your Right</span> </h1>
-                    <p>University Voting is your chance to stand up for what you believe in. Don't miss out this golden opportunity. Let's Share the future together.</p>
-                    <div class="input-control">
-                        <span><i class="fas fa-search"></i></span>
-                        <input type="text" name="" id="" placeholder="Search Keyword">
-                        <input type="submit" value="Search" class="btn">
+            <div class="candidates-top flex">
+                <h2 data-outline="Candidates List">Candidates List</h2>
+                <div class="category-btns">
+                </div>
+                <div class="search-box flex">
+                    <div class="clear-icon">
+                        <i class="fa-solid fa-xmark"></i>
                     </div>
+                    <input type="text" class="search" id="search" placeholder="Search Candidate...">
+                </div>
+            </div>
 
-                </div>
-                <div class="hero-image">
-                    <img src="./assets/images/4585.jpg" alt="Voting People Illustration">
-                </div>
+            <div class="candidates flex">
             </div>
         </div>
     </section>
 
-    <section id="cta">
-        <div class="cta-container">
-            <div class="container">
-                <div class="cta-cards">
-                    <div class="cta-card">
-                        <h4>Step 1</h4>
-                        <h2>Sign up</h2>
-                        <p>Create an account on this system to vote</p>
-                        <button class="btn btn-outline">Resiter as Voter</button>
-                    </div>
-                    <div class="cta-card">
-                        <h4>Step 2</h4>
-                        <h2>Vote</h2>
-                        <p>Vote for your potested Candidate</p>
-                    </div>
-                    <div class="cta-card">
-                        <h4>Step 3</h4>
-                        <h2>View Election Reusults</h2>
-                        <p>View election results for your Candidate</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="decision">
-        <div class="decision-container">
-            <div class="container">
-                <h3>Make you decision-making process more modern, safe and efficient</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Esse excepturi, quam consequatur ducimus tempore totam quae.</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="features">
-        <div class="features-container">
-            <div class="container">
-                <div class="features-header">
-                    <h2>Our Features</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis veritatis rerum ipsa accusantium autem atque molestias! Nesciunt laborum possimus nobis sed iusto quas temporibus natus, omnis, facilis at iure, voluptatum praesentium deserunt.</p>
-                </div>
-                <div class="features flex">
-                    <div class="feature">
-                        <div class="blob">
-                            <h3>Secure Platform</h3>
-                        </div>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur, laudantium!</p>
-                    </div>
-                    <div class="feature">
-                        <div class="blob">
-                            <h3>Vote Online</h3>
-                        </div>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur, laudantium!</p>
-                    </div>
-                    <div class="feature">
-                        <div class="blob">
-                            <h3>Real time results</h3>
-                        </div>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur, laudantium!</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
 
     <section id="forms">
@@ -193,7 +129,8 @@
 
 
 
-    <script src="./js/script.js"></script>
-    <script src="./assets/fontawesome/all.min.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/cands.js"></script>
+    <script src="../assets/fontawesome/all.min.js"></script>
 </body>
 </html>

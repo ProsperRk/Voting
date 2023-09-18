@@ -16,6 +16,7 @@ const asVoter = document.getElementById("as-voter");
 const eyeShow = document.querySelectorAll(".input-control .eye");
 
 
+
 // eyeShow[0].addEventListener("click", (e) => {
 //     if(userPass.type === "password") {
 //         userPass.type = "text";

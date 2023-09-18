@@ -3,6 +3,10 @@
     --secondary-color-green: #EEFFDD;
     --primary-text: #333;
     --white:#fff;
+    --primary-green: #007057;
+    --secondary-green: #298671;
+
+    --primary-gray: #e6e6e6;
 }
 
 * {
@@ -28,6 +32,14 @@ body {
     font-size: 14px;
     color: var(--primary-text);
     height: 200vh;
+}
+
+.nav-link.selected {
+    color: #007057;
+}
+
+.nav-link.selected:hover {
+    color: #007057;
 }
 
 .pages {
